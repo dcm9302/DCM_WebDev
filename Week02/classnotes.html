@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- this specifies the character set encoding.
+     without this tag our fonts might not load properly -->
+    <meta charset="utf-8" />
+    <!-- the viewport tag sets the initial scale and ensures
+     proper responsive behavior -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The title tag shows up in the browser tab and as the big blue link in search results -->
+    <title>HTML Boilerplate</title>
+  </head>
+
+  <body>
+    <!-- everything inside the body tag shows up to the user unless
+     modified to not be visible with css -->
+
+    <!-- ONLY 1 H1 per page -->
+    <h1>HTML Form Elements</h1>
+
+    <!-- Form using basic input types -->
+    <p>
+      the form action usually contains a file or link to process the form fields
+      once a user clicks submit.
+    </p>
+    <p>
+      for now, the main form attribute to worry about is the method.
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
+        >see w3 school.</a
+      >
+    </p>
+
+    <form
+      action="create_profile.js"
+      name="use_create"
+      target="_self"
+      method="POST"
+    >
+      <!-- field sets are for grouping input elements, they are labeled by the legend tag within it -->
+      <fieldset>
+        <legend>Simple text input</legend>
+        <p>
+          this is your most basic text input. we change input types by changing
+          the value of the type attribute.
+        </p>
+        <!-- label for attribute should match input id attribute -->
+        <label for="first_name">First Name: </label>
+        <input type="text" name="first_name" id="first_name" />
+        <br />
+        <br />
+        <label for="last_name">Last Name: </label>
+        <input
+          type="text"
+          name="last_name"
+          id="last_name"
+          maxlength="10"
+          placeholder="Smith"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Text Area</legend>
+        <label for="why_class">Why did you take this class?</label>
+        <textarea
+          name="why_class"
+          id="why_class"
+          rows="5"
+          cols="50"
+          required
+        ></textarea>
+      </fieldset>
+      <!-- step= for increments -->
+      <fieldset>
+        <legend>Common Input Types</legend>
+        <label for="cost">Number</label>
+        <input
+          type="number"
+          name="cost"
+          id="cost"
+          min="10"
+          max="100"
+          step=".01"
+        />
+        <br />
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" />
+        <br />
+        <label for="favorite_color">Favorite Color: </label>
+        <input type="color" name="favorite_color" id="favorite_color" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Check Boxes</legend>
+        <p>
+          Check boxes all the user to select more than one option at once. All
+          grouped checkbox inputs share the <em>same but different values.</em>
+        </p>
+        <p>What pets do you have?</p>
+        <input type="checkbox" name="pet" value="dog" /><label>dog</label>
+        <input type="checkbox" name="pet" value="cat" /><label>cat</label>
+        <input type="checkbox" name="pet" value="chicken" /><label
+          >chicken</label
+        >
+        <input type="checkbox" name="pet" value="bunny" /><label>bunny</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Radio Fields</legend>
+        <p>
+          Radio field allows the user to select only one option at a time. All
+          grouped radio inputs share the
+          <em>same name but different values.</em>
+        </p>
+        <input type="radio" name="favorite_pet" value="dog" /><label>dog</label>
+        <input type="radio" name="favorite_pet" value="cat" /><label>cat</label>
+        <input type="radio" name="favorite_pet" value="chicken" /><label
+          >chicken</label
+        >
+        <input type="radio" name="favorite_pet" value="bunny" /><label
+          >bunny</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Select Option Dropdowns</legend>
+        <label for="state">Pick a State</label>
+        <select name="state">
+          <option value="NY">New York</option>
+          <option value="NJ">New Jersey</option>
+          <option value="CT">Connecticut</option>
+        </select>
+      </fieldset>
+      <input type="button" value="submit" name="submit_profile" />
+      <button
+        title="This is a disabled submit button using the button tag"
+        name="submit_profile"
+        value="Submit Profile"
+      ></button>
+    </form>
+  </body>
+</html>
