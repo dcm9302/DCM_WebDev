@@ -1,0 +1,18 @@
+Home (Website I saw)
+-About
+-Recipes
+    -Categories
+          -Winter
+	  -Soup
+	  -Vegetarian
+	   -Dinner
+          -Pasta 
+          -One-Pan Meals
+	  -Chicken Dishes
+	  -30-minute Meals
+        -Quick & Easy
+        -Healthy
+        -Instant Pot
+        -Vegan
+        -Meal Prep
+        -Salads

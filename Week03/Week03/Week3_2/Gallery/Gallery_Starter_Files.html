@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Positioning</title>
+    <style>
+      type="text/css" > 
+      .abs_br {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+      }
+
+      .ret_tl {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 96, 96);
+        position: relative;
+        bottom: 0;
+        right: 0; 
+      } 
+      .abs_width {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 96, 96);
+        position: absolute;
+        bottom: 0;
+        left: 300px;
+      }
+
+      .abs_child {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 96, 96);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      .rel_parent {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 96, 96);
+        position: relative;
+      }
+      .fixed_top {
+        width: 100%;
+        height: 100px;
+        background-color:blue;
+        position: fixed;
+        top: 0;
+      }
+      .cover {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.3); 
+      }
+    
+    </style>
+  </head>
+  <body>
+    <!-- when we position an element absolute without declaring a position type for any parent element, absolute positioning is based on the browser window -->
+    <div class="abs_br"></div>
+    <!-- when we posiiton an element relative without declaring a psoition type for any parent alement, the elemnt is positioned relative to where it was going to be anyway -->
+    <div class="rel_tl"
+    
+    <div class="abs_width"></div>
+    <div class="abs_child"></div>
+    <div class="rel_parent">
+      <div class="abs_child"></div>
+      <div class="cover"></div>
+  </body>
+</html>
