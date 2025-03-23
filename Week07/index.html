@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>responsive layout w/nav toggle</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript">
+      // listen for the page to load
+      document.addEventListener("DOMContentLoaded", function () {
+        // add a click event listener to our hamburger menu icon
+        // store the nav eleent with the ID of main-nav as a varable called hamburger
+        const hamburger = document.getElementById("hamburger");
+        // add a click event listener to our hamburger menu icon that calls our toggleMenu function
+        hamburger.addEventListener("click", toggleMenu);
+      });
+      // write a function that grabs our nav by id and applies the class .show
+      function toggleMenu() {
+        // grab the nav element it's ID and add/remove the class .show
+        const navigation = document.getElementById("main-nav");
+        navigation.classList.toggle("show");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 class="brand"><a href="#">Logo</a></h1>
+      <!-- hide this on desktop, show on mobile -->
+      <!-- html entity = starts with and ends with ; with a code in the middle to load a special -->
+      <span class="mobile-menu" id="hamburger">&#8801;</span>
+      <nav id="main-nav">
+        <ul class="menu">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+          <li><a href="#">Link 5</a></li>
+          <li><a href="#">Link 6</a></li>
+          <li><a href="#">Link 7</a></li>
+          <li><a href="#">Link 8</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="thumb"><img src="6.jpg" alt="description." /></div>
+      <div class="thumb"><img src="6.jpg" alt="description." /></div>
+      <div class="thumb"><img src="6.jpg" alt="description." /></div>
+      <div class="thumb"><img src="6.jpg" alt="description." /></div>
+      <div class="thumb"><img src="6.jpg" alt="description." /></div>
+      <div class="thumb"><img src="6.jpg" alt="description." /></div>
+      <div class="thumb"><img src="6.jpg" alt="description." /></div>
+      <div class="thumb"><img src="6.jpg" alt="description." /></div>
+    </main>
+  </body>
+</html>
