@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Data Types</title>
+    <script type="text/javascript">
+      // declare variable
+      var myVar;
+      // assign value to variable
+      myVar = "20";
+      // declare and assign value to variable
+      var myVar2 = 15;
+
+      console.log(myVar);
+      console.log(typeof myVar);
+      // javascript will let you do weird things with numbers in strings.. watch out!
+      console.log(myVar + myVar2); // incorrect! '20' + '15' = 2015, not true
+      // even weirder, look what happens when we multiply
+      console.log(myVar * myVar2);
+      console.log(5 * "fourty 4"); // not a number, js is complaining now, NAN=not a number
+      var message = "hello";
+      var recipient = "world";
+      // string concatenation
+      console.log(message + recipient);
+
+      // sometimes we want to insert a variable inside a longer message to the user
+      var temp = 55;
+      console.log(
+        "today's temperature in brooklyn is " + temp + "degrees fahrenheit"
+      );
+
+      // booleans -using the const keyboard, when we use const, we have to immediately assign a value
+      const isOn = false;
+      //let lis used when a value is going to change based on other conditions, OR if we want
+      //to declare but not assign a value to a variable
+      let conditionalMessage;
+
+      // conditional statement
+      if (isOn) {
+        conditionalMessage = "The lights are ON!";
+      } else {
+        conditionalMessage = "The lights are OFF!";
+        // if the condition is true, do this, otherwise do that
+      }
+
+      alert(conditionalMessage);
+      // alert is a pop up message to the user
+
+      const myNum = 80;
+      // template literals, notice by hitting return, we also get a carriage return in our logged message
+      const anotherMessage = `My favorite number is ${myNum} and I am learning JavaScript!`;
+      // notice the backticks, not single or double quotes
+      console.log(anotherMessage);
+      //declare and define a funtion
+      function printMessage() {
+        console.log("hello world!");
+      }
+      // call/execute the function
+      printMessage();
+
+      // exact same funtion but written as an arrow function
+      const printMessage = () => {
+        console.log("hello world!");
+      };
+    </script>
+  </head>
+  <body></body>
+</html>
