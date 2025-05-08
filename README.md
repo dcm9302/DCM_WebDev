@@ -15,3 +15,5 @@ Next steps:
 Add to UX section and make interactive with video and prototype embeds
 Add loading animations for better transitions
 Expand cake section into interactive gallery with more hover effects
+
+LIVE DEMO LINK: https://drive.google.com/file/d/1Wj6MnD1bwUhMw250Bdw4y2bSUISt4WOk/view?usp=sharing
